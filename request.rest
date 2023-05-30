@@ -1,0 +1,30 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksIm5hbWUiOiJTaW50YSIsImVtYWlsIjoic2ludGFAZ21haWwuY29tIiwiaWF0IjoxNjc1MjQzMzI2LCJleHAiOjE2NzUyNDMzNDZ9.Yn0nqEsE0s6SEpYUBRWjB7nEWIJFWL5OqRk49AfiNBM
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Sinta",
+    "email": "sinta@gmail.com",
+    "password": "12345678",
+    "confPassword": "12345678"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "sinta@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE http://localhost:5000/logout
